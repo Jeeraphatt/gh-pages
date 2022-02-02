@@ -1,13 +1,13 @@
 pragma solidity ^0.4.24;
 
 // ----------------------------------------------------------------------------
-// Sample token contract : test on Bitkub Chain
-// Note          : PLS Token is a FANs Token
-// Symbol        : PLS
-// Name          : PLS Token
-// Total supply  : 1000000000000000000000000
-// Decimals      : 10
-// Owner Account : 0xCA9114a83C79cA473d1370CE35EEdBEC556D4B2D
+// Sample token contract : PLS Token is a FANs Token test on Bitkub Chain
+//  
+// Symbol        : {{PLS}}
+// Name          : {{PLS Token}}
+// Total supply  : {{1000000000000000000000000}}
+// Decimals      : {{10}}
+// Owner Account : {{0xCA9114a83C79cA473d1370CE35EEdBEC556D4B2D}}
 //
 // Enjoy.
 //
