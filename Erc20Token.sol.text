@@ -1,17 +1,17 @@
 pragma solidity ^0.4.24;
 
 // ----------------------------------------------------------------------------
-// Sample token contract : PLS Token is a FANs Token test on Bitkub Chain
-//  
+// Sample token contract
+//
 // Symbol        : {{PLS}}
 // Name          : {{PLS Token}}
-// Total supply  : {{1000000000000000000000000}}
-// Decimals      : {{10}}
+// Total supply  : {{100000000000000000000}}
+// Decimals      : {{4}}
 // Owner Account : {{0xCA9114a83C79cA473d1370CE35EEdBEC556D4B2D}}
 //
 // Enjoy.
 //
-// Credit : (c) by Juan Cruz Martinez 2020. MIT Licence.
+// (c) by Juan Cruz Martinez 2020. MIT Licence.
 // ----------------------------------------------------------------------------
 
 
@@ -70,7 +70,7 @@ contract ApproveAndCallFallBack {
 /**
 ERC20 Token, with the addition of symbol, name and decimals and assisted token transfers
 */
-contract LCSTToken is ERC20Interface, SafeMath {
+contract PLSToken is ERC20Interface, SafeMath {
     string public symbol;
     string public  name;
     uint8 public decimals;
@@ -86,8 +86,8 @@ contract LCSTToken is ERC20Interface, SafeMath {
     constructor() public {
         symbol = "PLS";
         name = "PLS Token";
-        decimals = 10;
-        _totalSupply = 1000000000000000000000000;
+        decimals = 4;
+        _totalSupply = 100000000000000000000;
         balances[0xCA9114a83C79cA473d1370CE35EEdBEC556D4B2D] = _totalSupply;
         emit Transfer(address(0), 0xCA9114a83C79cA473d1370CE35EEdBEC556D4B2D, _totalSupply);
     }
