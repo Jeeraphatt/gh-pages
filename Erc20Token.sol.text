@@ -5,7 +5,7 @@ pragma solidity ^0.4.24;
 //
 // Symbol        : {{PLS}}
 // Name          : {{PLS Token}}
-// Total supply  : {{100000000000000000000}}
+// Total supply  : {{1xxxxxxxxxxxxxx}}
 // Decimals      : {{4}}
 // Owner Account : {{0xCA9114a83C79cA473d1370CE35EEdBEC556D4B2D}}
 //
@@ -70,7 +70,7 @@ contract ApproveAndCallFallBack {
 /**
 ERC20 Token, with the addition of symbol, name and decimals and assisted token transfers
 */
-contract PLSToken is ERC20Interface, SafeMath {
+contract xxxToken is ERC20Interface, SafeMath {
     string public symbol;
     string public  name;
     uint8 public decimals;
@@ -87,7 +87,7 @@ contract PLSToken is ERC20Interface, SafeMath {
         symbol = "PLS";
         name = "PLS Token";
         decimals = 4;
-        _totalSupply = 100000000000000000000;
+        _totalSupply = 1xxxxxxxxxxxxxx;
         balances[0xCA9114a83C79cA473d1370CE35EEdBEC556D4B2D] = _totalSupply;
         emit Transfer(address(0), 0xCA9114a83C79cA473d1370CE35EEdBEC556D4B2D, _totalSupply);
     }
